@@ -1,0 +1,74 @@
+@import url("/public/css/main.css");
+@import url("/public/css/components/carousel.css");
+
+.shop {
+    display: flex;
+}
+
+
+.teahouse-benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel_custom {
+    display: grid;
+    gap: 30px;
+}
+
+.slideshow-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+#products .show {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.products__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(100px, max-content);
+    align-content: space-between;
+}
+
+.products__nav {
+    justify-self: end;
+    align-self: end;
+}
+
+.products__nav .dot {
+    background-color: var(--btn-1);
+}
+
+.products__nav .active,
+.products__nav .dot:hover {
+    background-color: var(--font-color-1);
+}
+
+.range {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #7B5337;
+}
+
+@media only screen and (max-width: 992px) {
+    #products .show{
+        grid-template-columns: 1fr;
+    }
+}

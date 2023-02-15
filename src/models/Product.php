@@ -1,76 +1,101 @@
 <?php
 
 class Product {
-    private $productID;
-    private $productName;
-    private $productDescription;
-    private $productImageURL;
-    private $productPrice;
-    private $categoryID;
-
-    public function __construct(
-        string $productName,
-        string $productDescription,
-        string $productImageURL,
-        float $productPrice,
-        int $categoryID,
-        int $productID = null
-    ) {
-        $this -> productName = $productName;
-        $this -> productDescription = $productDescription;
-        $this -> productImageURL = $productImageURL;
-        $this -> productPrice = $productPrice;
-        $this -> categoryID = $categoryID;
-        $this -> productID = $productID;
-    }
+    public $id;
+    public $name;
+    public $desc;
+    public $price;
+    public $category;
+    public $origin;
+    public $type;
+    public $weight;
 
     /**
-     * @return int|null
+     * @param $id
+     * @param $name
+     * @param $desc
+     * @param $price
+     * @param $category
+     * @param $origin
+     * @param $type
+     * @param $weight
      */
-    public function getProductID(): int
+    public function __construct(int $id, string $name, string $desc, float $price, string $category, string $origin, string $type, int $weight)
     {
-        return $this->productID;
-    }
-
-    /**
-     * @return string
-     */
-    public function getProductName(): string
-    {
-        return $this->productName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getProductDescription(): string
-    {
-        return $this->productDescription;
-    }
-
-    /**
-     * @return string
-     */
-    public function getProductImageURL(): string
-    {
-        return $this->productImageURL;
-    }
-
-    /**
-     * @return float
-     */
-    public function getProductPrice(): float
-    {
-        return $this->productPrice;
+        $this->id = $id;
+        $this->name = $name;
+        $this->desc = $desc;
+        $this->price = $price;
+        $this->category = $category;
+        $this->origin = $origin;
+        $this->type = $type;
+        $this->weight = $weight;
     }
 
     /**
      * @return int
      */
-    public function getCategoryID(): int
+    public function getId(): int
     {
-        return $this->categoryID;
+        return $this->id;
     }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDesc(): string
+    {
+        return $this->desc;
+    }
+
+    /**
+     * @return float
+     */
+    public function getPrice(): float
+    {
+        return $this->price;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCategory(): string
+    {
+        return $this->category;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOrigin(): string
+    {
+        return $this->origin;
+    }
+
+    /**
+     * @return string
+     */
+    public function getType(): string
+    {
+        return $this->type;
+    }
+
+    /**
+     * @return int
+     */
+    public function getWeight(): int
+    {
+        return $this->weight;
+    }
+
 
 
 }

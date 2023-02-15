@@ -1,0 +1,57 @@
+@import url("/public/css/main.css");
+
+.product__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.product-wrapper {
+    padding: 56px 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.product__specials {
+    width: 70%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product__info {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+}
+
+#product__price {
+    text-align: left;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+
+#add-to-cart {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 992px){
+    
+}

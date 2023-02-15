@@ -3,21 +3,28 @@
 require_once __DIR__.'/Product.php';
 
 class CartItem {
+    private $cartID;
     private $userID;
     private $productID;
-    private $cartItemID;
-    private $product;
 
-    public function __construct(
-        int $userID,
-        int $productID,
-        int $cartItemID,
-        Product $product = null
-    ) {
-        $this -> userID = $userID;
-        $this -> productID = $productID;
-        $this -> cartItemID = $cartItemID;
-        $this -> product = $product;
+    /**
+     * @param $cartID
+     * @param $userID
+     * @param $productID
+     */
+    public function __construct(int $cartID, int $userID, int $productID)
+    {
+        $this->cartID = $cartID;
+        $this->userID = $userID;
+        $this->productID = $productID;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCartID(): int
+    {
+        return $this->cartID;
     }
 
     /**
@@ -34,22 +41,6 @@ class CartItem {
     public function getProductID(): int
     {
         return $this->productID;
-    }
-
-    /**
-     * @return int
-     */
-    public function getCartItemID(): int
-    {
-        return $this->cartItemID;
-    }
-
-    /**
-     * @return Product|null
-     */
-    public function getProduct(): Product
-    {
-        return $this->product;
     }
 
 

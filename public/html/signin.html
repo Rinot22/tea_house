@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <title>Sign-in</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="substrate">
+            <div class="container">
+                <div class="page__logo" include-html="/public/html/components/logo.html"></div>
+                <h2>Sign in</h2>
+                <form action="/registration" method="post">
+                    <input type="text" name="name" id="name" placeholder="name">
+                    <input type="text" name="surname" id="surname" placeholder="surname">
+                    <input type="email" name="email" id="email" placeholder="e-mail">
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <div class="check">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">Accept terms & Condition</label>
+                    </div>
+                    <input class="btn btn-1" type="submit" value="sign in">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+</body>
+
+</html>

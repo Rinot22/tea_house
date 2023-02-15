@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "name": "name1",
+            "weight": "weight1",
+            "quantity": "quantity1",
+            "price": "price1",
+            "total": "total1"
+        },
+        {
+            "name": "name2",
+            "weight": "weight2",
+            "quantity": "quantity2",
+            "price": "price2",
+            "total": "total2"
+        }
+    ],
+    "total": 146,
+    "address": "Address1"
+}

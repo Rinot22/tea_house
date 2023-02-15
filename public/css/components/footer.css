@@ -1,0 +1,18 @@
+footer {
+    padding: 22px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__navlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/product.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" include-html="/public/html/components/menu.html"></div>
+    </div>
+
+    <div class="container product-desc">
+        <div class="product__heading">
+            <h2 id="product__title">Pure green tea</h2>
+            <button class="btn btn-2" id="product__fav"><img src="/public/img/bi_heart.svg"
+                    alt="add to favorites"></button>
+        </div>
+
+        <div class="product-wrapper">
+            <div class="product__img">
+                <img src="/public/img/suggestion-card-img-1.png" alt="product img">
+            </div>
+            <div class="product__info">
+                <input type="hidden" name="id" value="none" id="id">
+                <p class="tea-desc" id="product__desc">Id id nibh orci, scelerisque arcu hendrerit ornare aliquam
+                    scelerisque. Ut scelerisque eu cursus dui diam neque in in auctor.</p>
+                <h2 id="product__price">47$</h2>
+                <div id="product__quantity">
+                    <button class="product__quantity" id="product__quantity-minus">-</button>
+                    <span>1</span>
+                    <button class="product__quantity" id="product__quantity-plus">+</button>
+                </div>
+                <div class="product__specials">
+                    <h6>Tasting notes</h6>
+                    <p class="tea-desc" id="product__note">Grasy, rich, umami</p>
+                    <h6>Ingridients</h6>
+                    <p class="tea-desc" id="product__ingridients">Organic green tea, rose petals, orange zest</p>
+                    <h6>Caffeine</h6>
+                    <p class="tea-desc" id="product__caffeine">Medium</p>
+                    <h6>Origin</h6>
+                    <p class="tea-desc" id="product__origin">Japan</p>
+                    <h6>Weight</h6>
+                    <p class="tea-desc" id="product__weight">50g</p>
+                </div>
+                <button class="btn btn-1" id="add-to-cart">add to cart</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container suggestions">
+        <h2>Our suggestion</h2>
+        <div class="suggestions__cards" id="suggestions__cards">
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="footer-wrapper" include-html="/public/html/components/footer.html"></div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+    <script src="/public/js/product.js"></script>
+</body>
+
+</html>

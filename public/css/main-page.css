@@ -1,0 +1,151 @@
+@import "/public/css/main.css";
+@import url("/public/css/components/carousel.css");
+
+.desc {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 70vh;
+    padding-top: 79px;
+    padding-bottom: 79px;
+}
+
+.desc__img {
+    min-width: 300px;
+}
+
+.desc__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc__link {
+    align-self: center;
+    width: 50%;
+}
+
+p {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--font-size-8);
+    line-height: 23px;
+    letter-spacing: 0.04em;
+
+    color: var(--font-color-5);
+}
+
+h1 {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-1);
+    line-height: 70px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--font-color-5);
+}
+
+
+
+.desc h3 {
+    flex-basis: 30%;
+    width: 70%;
+    align-self: end;
+}
+
+body>.substrate::before {
+    left: 20%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+
+.bestsellers,
+.add-info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.bestsellers-cards {
+    padding-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px 20px;
+}
+
+.tea-kinds-wrapper {
+    position: relative;
+}
+
+.tea-kinds {
+    padding-top: 97px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 30vh;
+    gap: 20px;
+    padding-bottom: 125px;
+}
+
+.tea-kinds::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("/src/img/leaf-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.tea-kinds__card {
+    padding: 36px;
+}
+
+.tea-kinds>.substrate::before {
+    backdrop-filter: blur(7.5px);
+    border-radius: 5px;
+}
+
+.add-info__heading {
+    color: var(--font-color-5);
+}
+
+.add-info__content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.carousel_custom{
+    display: grid;
+    gap:30px;
+}
+
+.slideshow-container {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    .desc, .tea-kinds {
+        grid-template-columns: 1fr;
+    }
+    .add-info__content {
+        display: grid;
+    }
+    .bestsellers-cards{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .bestsellers-cards .tea-card{
+        display: grid;
+        justify-items: center;
+    }
+}

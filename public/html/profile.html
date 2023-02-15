@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" include-html="/public/html/components/menu.html"></div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h1>My profile</h1>
+        </div>
+    </section>
+
+    <div class="container account">
+        <div class="avatar">
+            <img src="/public/img/avatar.png" alt="avatar">
+            <a href="#">Change avatar</a>
+        </div>
+        <div class="account__info">
+            <form action="#">
+                <h4>Profile information</h4>
+                <input type="text" placeholder="Name" id="name" required>
+                <input type="text" placeholder="surname" id="surname" required>
+                <input type="tel" placeholder="+48 --- --- ---" id="tel" required>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <input class="btn btn-1" type="submit" value="change personal information" id="change-personal-info">
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <form action="#">
+            <h4>Shipping address</h4>
+            <input type="text" placeholder="city" id="city" required>
+            <input type="text" placeholder="address" id="address" required>
+            <input class="btn btn-1" type="submit" value="change shipping address" id="change-shipping-address">
+        </form>
+    </div>
+
+    <section>
+        <div class="container orders">
+            <h2>Order history</h2>
+            <div class="order-history" id="order-history">
+            </div>
+        </div>
+    </section>
+
+    <div class="container footer">
+        <div class="footer-wrapper" include-html="/public/html/components/footer.html"></div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+    <script src="/public/js/profile.js"></script>
+</body>
+
+</html>

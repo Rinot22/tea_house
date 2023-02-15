@@ -1,0 +1,219 @@
+@import url("/public/css/main.css");
+
+h4 {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-6);
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+
+    color: var(--font-color-5);
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: left;
+
+}
+
+.secondary {
+    color: var(--font-color-4);
+}
+
+.order-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.order__info {
+    padding: 0px 46px 24px 46px;
+    background-color: #F5F5F5;
+    border: 1px solid var(--btn-2);
+    border-radius: 7px;
+}
+
+.order__info h2{
+    padding-bottom: 30px;
+}
+
+.order__info h2.secondary{
+    padding: 60px 0px 64px 0px;
+    text-align: right;
+
+}
+
+.order__info h4{
+    padding-bottom: 24px;
+}
+
+.ornament {
+    display: flex;
+    justify-content: space-evenly;
+
+    transform: translateY(-50%);
+}
+
+td {
+    border-bottom: 1px solid var(--border-color-1);
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 0px;
+}
+
+table {
+    width: 100%;
+}
+
+
+td:nth-child(1) {
+    font-family: var(--font-1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-7);
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--font-color-5);
+}
+
+td:nth-child(2) {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-8);
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--font-color-5);
+}
+
+td:nth-child(3) {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-5);
+    line-height: 31px;
+
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+
+    color: var(--border-color-1);
+}
+
+td:nth-child(4) {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-5);
+    line-height: 31px;
+
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+
+    color: var(--font-color-1);
+}
+
+form {
+    display: grid;
+    align-content: space-between;
+}
+input+h4{
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+.btn-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buy{
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.buy a{
+    width: 50%;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 992px){
+    .order-details{
+        grid-template-columns: 1fr;
+    }
+    td:nth-child(1) {
+        font-family: var(--font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: var(--font-size-10);
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: var(--font-color-5);
+    }
+    
+    td:nth-child(2) {
+        font-family: var(--font-2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--font-size-11);
+        line-height: 23px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: var(--font-color-5);
+    }
+    
+    td:nth-child(3) {
+        font-family: var(--font-2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--font-size-8);
+        line-height: 31px;
+    
+        letter-spacing: 0.04em;
+        font-variant: small-caps;
+    
+        color: var(--border-color-1);
+    }
+    
+    td:nth-child(4) {
+        font-family: var(--font-2);
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--font-size-8);
+        line-height: 31px;
+    
+        letter-spacing: 0.04em;
+        font-variant: small-caps;
+    
+        color: var(--font-color-1);
+    }
+}

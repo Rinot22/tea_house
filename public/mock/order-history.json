@@ -1,0 +1,33 @@
+[
+    {
+        "products": [
+            {
+                "name": "name1",
+                "weight": "weight1",
+                "quantity": "quantity1",
+                "price": "price1",
+                "total": "total1"
+            },
+            {
+                "name": "name2",
+                "weight": "weight2",
+                "quantity": "quantity2",
+                "price": "price2",
+                "total": "total2"
+            }
+        ],
+        "date": "Date1"
+    },
+    {
+        "products": [
+            {
+                "name": "name1",
+                "weight": "weight1",
+                "quantity": "quantity1",
+                "price": "price1",
+                "total": "total1"
+            }
+        ],
+        "date": "Date2"
+    }
+]

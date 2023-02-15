@@ -1,0 +1,26 @@
+[
+    {
+        "id": "id1",
+        "img": "/src/img/suggestion-card-img-1.png",
+        "title": "title 1",
+        "weight": "weight 1",
+        "quantity": 1,
+        "price": 37
+    },
+    {
+        "id": "id2",
+        "img": "/src/img/suggestion-card-img-2.png",
+        "title": "title 2",
+        "weight": "weight 2",
+        "quantity": 2,
+        "price": 37
+    },
+    {
+        "id": "id3",
+        "img": "/src/img/suggestion-card-img-3.png",
+        "title": "title 3",
+        "weight": "weight 3",
+        "quantity": 2,
+        "price": 37
+    }
+]

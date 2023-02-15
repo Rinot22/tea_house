@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main-page.css">
+    <title>Main</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu" include-html="/public/html/components/menu.html"></div>
+    </div>
+    <div class="substrate">
+        <div class="container desc">
+            <div class="desc__text">
+                <h1>Today. Tomorrow. Always.</h1>
+                <h3>At the English Tea Shop, we produce the most delicious, refreshing and diverse range of teas.</h3>
+                <a class="desc__link btn btn-1" href="#">Discover</a>
+            </div>
+            <img class="desc__img" src="/public/img/teapot.png" alt="Teapot">
+        </div>
+    </div>
+    <div class="container suggestions">
+        <h2>Our suggestion</h2>
+        <div class="suggestions__cards" id="suggestions__cards">
+        </div>
+    </div>
+
+    <div class="tea-kinds-wrapper">
+        <div class="container tea-kinds">
+            <div class="tea-kinds__card substrate" include-html="/public/html/components/tea-kind.html"></div>
+            <div class="tea-kinds__card substrate" include-html="/public/html/components/tea-kind.html"></div>
+            <div class="tea-kinds__card substrate" include-html="/public/html/components/tea-kind.html"></div>
+            <div class="tea-kinds__card substrate" include-html="/public/html/components/tea-kind.html"></div>
+        </div>
+    </div>
+
+    <section class="teahouse-benefits">
+        <div class="container">
+            <div class="carousel_custom"></div>
+        </div>
+    </section>
+
+
+    <div class="container bestsellers">
+        <h2>Best sellers</h2>
+        <div class="bestsellers-cards">
+            <div class="bestsellers-card" include-html="/public/html/components/tea-card.html"></div>
+            <div class="bestsellers-card" include-html="/public/html/components/tea-card.html"></div>
+            <div class="bestsellers-card" include-html="/public/html/components/tea-card.html"></div>
+            <div class="bestsellers-card" include-html="/public/html/components/tea-card.html"></div>
+        </div>
+    </div>
+    <div class="container add-info">
+        <h2 class="add-info__heading">Teahouse is the best online tea and coffee shop in Ukraine!</h2>
+        <div class="add-info__content">
+            <img src="/public/img/teahouse-cups.png" alt="Cups">
+            <p>We have been importing, manufacturing and selling tea, coffee, tableware and accessories since 2006. We
+                import from all producing countries: China, Japan, Taiwan, South Korea, India, Ceylon, Georgia, Kenya.
+                In each country we have an office or a representative, a tester and a buyer. This means that we
+                independently select the best raw materials from plantations and factories, control quality at the time
+                of purchase, and maintain prices at a comfortable level for us and the client.</p>
+        </div>
+    </div>
+
+
+    <div class="container footer">
+        <div class="footer-wrapper" include-html="/public/html/components/footer.html"></div>
+    </div>
+
+    <script src="/public/js/includeHandler.js"></script>
+    <script src="/public/js/main-page.js"></script>
+    <script defer src="/public/js/carousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="substrate">
+
+            <div class="container">
+                <div class="page__logo" include-html="/public/html/components/logo.html"></div>
+                <h2 class="page__heading">Login</h2>
+                <form action="/login" method="post">
+                    <div class="message">
+                        <?php if (isset($messages)) {
+                        foreach ($messages as $message) echo $message;
+                    }
+                    ?>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="e-mail">
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <input class="btn btn-1" type="submit" value="login">
+                </form>
+                <div class="altlogin">
+                    <p class="altlogin__heading">or login with</p>
+                    <div class="altlogin__links">
+                        <a href="#" class="altlogin__link">
+                            <img src="/public/img/google-icon.svg" alt="Google icon">
+                        </a>
+                        <a href="#" class="altlogin__link">
+                            <img src="/public/img/facebook-icon.svg" alt="Facebook icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="signin">
+                    <p class="signin__heading">Don't have account?</p>
+                    <a class="signin__link" href="/registration">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+</body>
+
+</html>

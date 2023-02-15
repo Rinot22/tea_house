@@ -3,15 +3,12 @@
 class Category {
     private $categoryID;
     private $categoryName;
-    private $categoryDescription;
 
     public function __construct(
         string $categoryName,
-        string $categoryDescription,
-        int $categoryID = null
+        int $categoryID
     ) {
         $this -> categoryName = $categoryName;
-        $this -> categoryDescription = $categoryDescription;
         $this -> categoryID = $categoryID;
     }
 
@@ -29,14 +26,6 @@ class Category {
     public function getCategoryName(): string
     {
         return $this->categoryName;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCategoryDescription(): string
-    {
-        return $this->categoryDescription;
     }
 
 

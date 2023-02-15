@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/shop.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" include-html="/public/html/components/menu.html"></div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h1>Shop</h1>
+        </div>
+    </section>
+
+
+    <div class="container shop">
+        <div class="filters">
+            <div class="filtets__sort">
+                <label for="sort" class="filters__heading">Sort by </label>
+                <select name="sort" id="sort">
+                    <option value="default-sorting">Default sorting</option>
+                    <option value="sorting-1">sorting 1</option>
+                    <option value="sorting-2">sorting 2</option>
+                    <option value="sorting-3">sorting 3</option>
+                </select>
+            </div>
+            <h4 class="filters__heading">Product type</h4>
+            <input type="checkbox" id="all" name="All" value="All" checked>
+            <label for="all">All</label><br>
+            <input type="checkbox" id="product__leaf-tea" name="product__leaf-tea" value="Leaf tea">
+            <label for="product__leaf-tea">Leaf tea</label><br>
+            <input type="checkbox" id="product__tea-sets" name="product__tea-sets" value="Tea sets">
+            <label for="product__tea-sets">Tea sets</label><br>
+            <input type="checkbox" id="product__tea-things" name="product__tea-things" value="Tea things">
+            <label for="product__tea-things">Tea things</label><br>
+            <input type="checkbox" id="product__sweets" name="product__sweets" value="Sweets">
+            <label for="product__sweets">Sweets</label><br>
+            <input type="checkbox" id="product__gifts" name="product__gifts" value="Gifts">
+            <label for="product__gifts">Gifts</label><br>
+
+            <h4 class="filters__heading">Categories</h4>
+            <input type="checkbox" id="categories__green-tea" name="categories__green-tea"
+                value="Green tea">
+            <label for="categories__green-tea">Green tea</label><br>
+            <input type="checkbox" id="categories__black-tea" name="categories__black-tea"
+                value="Black tea">
+            <label for="categories__black-tea">Black tea</label><br>
+            <input type="checkbox" id="categories__herbal-tea" name="categories__herbal-tea"
+                value="Herbal tea">
+            <label for="categories__herbal-tea">Herbal tea</label><br>
+            <input type="checkbox" id="categories__fruit-tea" name="categories__fruit-tea"
+                value="Fruit tea">
+            <label for="categories__fruit-tea">Fruit tea</label><br>
+            <input type="checkbox" id="categories__white-tea" name="categories__white-tea"
+                value="White tea">
+            <label for="categories__white-tea">White tea</label><br>
+            <input type="checkbox" id="categories__pu-erh" name="categories__pu-erh" value="Pu-Erh">
+            <label for="categories__pu-erh">Pu-Erh</label><br>
+
+            <h4 class="filters__heading">Origin</h4>
+            <input type="checkbox" id="origin__india" name="origin__india" value="India">
+            <label for="origin__india">India</label><br>
+            <input type="checkbox" id="origin__china" name="origin__china" value="China">
+            <label for="origin__china">China</label><br>
+            <input type="checkbox" id="origin__japan" name="origin__japan" value="Japan">
+            <label for="origin__japan">Japan</label><br>
+            <input type="checkbox" id="origin__egypt" name="origin__egypt" value="Egypt">
+            <label for="origin__egypt">Egypt</label><br>
+            <input type="checkbox" id="origin__africa" name="origin__africa" value="Africa">
+            <label for="origin__africa">Africa</label><br>
+
+            <h4 class="filters__heading">Price filter</h4>
+            <label for="price__range">Price (between 1 and 340):</label>
+            <input type="range" id="price__range" name="price__range" min="1" max="340" step="1" value="100">
+            <div class="range">
+                <span>1$</span>
+                <span id="range-val"></span>
+            </div>
+        </div>
+        <div class="products__wrapper">
+            <div class="products" id="products">
+
+            </div>
+            <div class="products__nav"></div>
+        </div>
+    </div>
+
+
+
+    <section class="teahouse-benefits">
+        <div class="container">
+            <div class="carousel_custom"></div>
+        </div>
+    </section>
+
+
+    <div class="container footer">
+        <div class="footer-wrapper" include-html="/public/html/components/footer.html"></div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+    <script src="/public/js/shop.js"></script>
+    <script defer src="/public/js/carousel.js"></script>
+</body>
+
+</html>

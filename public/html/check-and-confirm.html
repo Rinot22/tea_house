@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/check-and-confirm.css">
+    <title>Confirm</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu" include-html="/public/html/components/menu.html"></div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h1>Check and confirm</h1>
+        </div>
+    </section>
+
+    <div class="container order-details">
+        <div class="order__info">
+            <div class="ornament">
+                <img src="/public/img/Vector 9.svg" alt="">
+                <img src="/public/img/Vector 9.svg" alt="">
+                <img src="/public/img/Vector 9.svg" alt="">
+                <img src="/public/img/Vector 9.svg" alt="">
+                <img src="/public/img/Vector 9.svg" alt="">
+                <img src="/public/img/Vector 9.svg" alt="">
+            </div>
+            <h2>Your order</h2>
+            <table>
+                <tbody></tbody>
+            </table>
+            <h2 class="secondary">Total <span id="total"></span>$</h2>
+            <h4>Shipping address</h4>
+            <p class="secondary" id="address"></p>
+        </div>
+        <form action="#">
+            <h4>Payment information</h4>
+            <input id="ccn" type="number" inputmode="numeric"
+                maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+            <div class="wrapper">
+                <input type="text" name="date" id="date" placeholder="Expiration date">
+                <input type="number" name="cvc" id="cvc" placeholder="cvc">
+            </div>
+            <h4>Or</h4>
+            <a class="btn btn-2" href="#">pay by <img src="/public/img/fa6-brands_google-pay.png" alt="Gpay"></a>
+        </form>
+    </div>
+
+    <div class="container buy">
+        <a class="btn btn-1" href="#" id="buy">Buy and pay</a>
+    </div>
+
+    <div class="container footer">
+        <div class="footer-wrapper" include-html="/public/html/components/footer.html"></div>
+    </div>
+    <script src="/public/js/includeHandler.js"></script>
+    <script src="/public/js/check-and-confirm.js"></script>
+</body>
+
+</html>

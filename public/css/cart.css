@@ -1,0 +1,70 @@
+@import url("/public/css/main.css");
+
+
+table {
+    width: 100%;
+}
+
+th {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-8);
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+
+    color: var(--font-color-5);
+    text-transform: uppercase;
+}
+
+
+th,
+td {
+    border-bottom: 1px solid var(--border-color-1);
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    text-align: right;
+}
+
+h4 {
+    padding-top: 70px;
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-size-6);
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    font-variant: small-caps;
+
+    color: var(--font-color-5);
+    text-transform: uppercase;
+}
+
+form{
+    display: grid;
+    gap: 40px;    
+    padding-bottom: 40px;
+}
+
+.form__info{
+    display: grid;
+    gap: 20px;
+    width: 50%;
+}
+
+.input-wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+input[type="submit"]{
+    justify-self: end;
+    align-self: end;
+}
+

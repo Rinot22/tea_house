@@ -1,0 +1,30 @@
+[
+    {
+        "img": "/src/img/suggestion-card-img-1.png",
+        "title": "title 1",
+        "desc": "Desc 1",
+        "price": "47$",
+        "weight": "50g"
+    }, 
+    {
+        "img": "/src/img/suggestion-card-img-2.png",
+        "title": "title 2",
+        "desc": "Desc 2",
+        "price": "48$",
+        "weight": "51g"
+    }, 
+    {
+        "img": "/src/img/suggestion-card-img-3.png",
+        "title": "title 3",
+        "desc": "Desc 3",
+        "price": "49$",
+        "weight": "52g"
+    }, 
+    {
+        "img": "/src/img/suggestion-card-img-4.png",
+        "title": "title 4",
+        "desc": "Desc 4",
+        "price": "50$",
+        "weight": "53g"
+    }
+]

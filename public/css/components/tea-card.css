@@ -1,0 +1,53 @@
+.tea-caption {
+    padding: 16px;
+    background: rgba(220, 252, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 0px 30px rgba(85, 85, 85, 0.15), inset -10px -10px 70px rgba(255, 255, 255, 0.25), inset 10px 10px 30px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(7.5px);
+    border-radius: 5px;
+    display: grid;
+    gap: 7px;
+}
+
+.tea-desc {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--font-size-12);
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: var(--font-color-5);
+}
+
+.tea-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tea-price {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--font-size-4);
+    line-height: 38px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--font-color-1);
+
+}
+
+.tea-weight {
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--font-size-10);
+    line-height: 19px;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--font-color-5);
+}

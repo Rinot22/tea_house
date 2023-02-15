@@ -1,0 +1,134 @@
+@import "/public/css/main.css";
+
+body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url("/src/img/login-img.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    padding: 50px 0px;
+}
+
+.container {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+input:nth-last-child(2) {
+    margin-bottom: 33px;
+}
+
+.substrate {
+    display: flex;
+    width: 50%;
+    min-width: min-content;
+}
+
+.substrate::before {
+    border-radius: 0px 50px 50px 0px;
+    backdrop-filter: blur(7.5px);
+}
+
+.page__logo {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.altlogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.page__heading,
+.altlogin__heading,
+.signin__heading,
+.signin__link {
+    font-family: var(--font-1);
+    color: var(--font-color-1);
+    font-size: var(--font-size-7);
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.altlogin__links {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.altlogin__link {
+    width: 33px;
+}
+
+.signin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin__link {
+    color: var(--font-color-4);
+    text-decoration: underline;
+}
+
+.check input{
+    padding: 0;
+    width: initial;
+}
+.check label{
+    text-transform: uppercase;
+    color: var(--font-color-2);
+
+    font-family: var(--font-2);
+    font-style: normal;
+    font-weight: 300;
+    font-size: var(--font-size-11);
+    letter-spacing: 0.115em;
+}
+
+@media only screen and (max-width: 992px) {
+
+
+    body::before {
+        background-image: url("/src/img/leaf-background.png");
+    }
+
+    .substrate {
+        width: 100%;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .signin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
